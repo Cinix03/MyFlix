@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cinix03/NetflixClone.git"
+    "url": "git+https://github.com/Cinix03/MyFlix.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Cinix03/NetflixClone/issues"
+    "url": "https://github.com/Cinix03/MyFlix/issues"
   },
-  "homepage": "https://github.com/Cinix03/NetflixClone#readme",
+  "homepage": "https://github.com/Cinix03/MyFlix#readme",
   "dependencies": {
     "axios": "^1.8.2",
     "bcryptjs": "^3.0.2",
