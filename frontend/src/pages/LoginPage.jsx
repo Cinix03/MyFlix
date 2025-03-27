@@ -7,9 +7,11 @@ const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
+  const { login } = useAuthUserStore();
+
   const handleLogin = async (e) => {
     e.preventDefault();
-    
+    login({ email, password });
     
   };
 
