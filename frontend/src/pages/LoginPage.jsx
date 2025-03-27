@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useAuthUserStore } from "../store/authUser";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
