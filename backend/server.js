@@ -9,6 +9,7 @@ import { protectRoute } from './middleware/protectRoute.js';
 import { ENV_VARS } from './config/envVars.js';
 import { connectDB } from './config/db.js';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 const app = express();
 const PORT = ENV_VARS.PORT
@@ -17,6 +18,8 @@ dotenv.config();
 
 console.log("Mongo_URI: ", process.env.MONGO_URI)
 
+
+app.use(cors());
 
 app.use(express.json());
 app.use(cookieParser());

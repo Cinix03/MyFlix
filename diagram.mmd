@@ -1,0 +1,15 @@
+graph TD;
+    User-->ReactNative;
+    ReactNative-->|HTTP Requests|NodeJS;
+    NodeJS-->|CRUD Operations|MongoDB;
+    MongoDB-->|Response Data|NodeJS;
+
+    NodeJS-->|AuthenticationJWT|AuthService;
+    NodeJS-->|File Uploads|CloudStorage;
+    CloudStorage-->|File Response|NodeJS;
+
+
+    NodeJS-->|WebSockets|WebSockets;
+    WebSockets-->|Live Updates|NodeJS;
+    AuthService-->|JWT|NodeJS;
+    NodeJS-->|HTTP Response|ReactNative
